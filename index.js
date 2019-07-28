@@ -30,6 +30,17 @@ client.once('ready', () => {
 	console.log('Ready!');
 });
 
+// welcome message
+client.on('guildMemberAdd', member => {
+    // find welcome channel
+    const channel = member.guild.channels.find(channel => channel.name === 'welcome');
+
+    // if there's no welcome channel
+    if(!channel) return;
+
+    channel.send(`sup, ${member}`);
+});
+
 // logs message content
 client.on('message', message => {
     // if the bot wrote the message or it doesn't start w the prefix, return
