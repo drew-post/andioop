@@ -3,6 +3,7 @@
 - <b> commands: </b>
   - <b> args-info: </b> displays command/arguments given
   - <b> avatar: </b> displays your own, someone else's, or up to 5 people's avatars
-  - <b> jocke: </b> lubs jocke
-  - <b> yeehaw:</b> says yeehaw/sends attachment
-  - <b> andioop: </b> not sure yet
+  - <b> help: </b> displays command guide
+  - <b> time: </b> displays drew's local time
+  - <b> vine: </b> sends vine
+  - <b> yeehaw:</b> says yeehaw/sends random attachment
