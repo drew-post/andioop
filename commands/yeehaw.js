@@ -1,12 +1,13 @@
-const Discord = require('discord.js');
-
 module.exports = {
     name: 'yeehaw',
     description: 'says yeehaw/sends attachment',
     execute(message) {
-        const attachment = new Discord.Attachment('https://i.imgur.com/Bdp01cF.jpg');
+        const number = 6;
+        const randomNum = Math.floor(Math.random() * number);
 
-        message.channel.send('YEEHAW 🤠', attachment);
+        message.channel.send('YEEHAW 🤠', { file: "./yeehaw/yeehaw" + randomNum + ".jpg" });  
         message.react('🤠');
+
+        
     },
 };
