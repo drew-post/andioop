@@ -1,4 +1,4 @@
-# andioop (discord bot attempt no. 2)
+# andioop (discord bot)
 
 - <b> commands: </b>
   - <b> avatar: </b> displays your own, someone else's, or up to 5 people's avatars
