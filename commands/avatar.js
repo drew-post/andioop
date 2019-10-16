@@ -4,7 +4,7 @@ module.exports = {
     execute(message) {
         // if no users are mentioned, send back author avatar
         if(!message.mentions.users.size) {
-            return message.channel.send(`your avatar: ${message.author.avatarURL}`);
+            return message.channel.send(`${message.author.username}'s avatar: ${message.author.avatarURL}`);
         }
 
         // if up to 5 users are mentioned put all mentioned users into an array and return message w avatar URL

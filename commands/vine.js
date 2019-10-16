@@ -3,10 +3,9 @@ module.exports = {
     description: 'sends random vine',
     execute(message) {
 
-        const number = 10;
+        const number = 11;
 
         const random = Math.floor(Math.random() * number);
-        console.log(random);
 
         switch(random) {
             case 0: 
@@ -26,7 +25,7 @@ module.exports = {
                 break;
             
             case 4:
-                message.channel.send("benefits of putting my brother down: i'd get pushed way less \nhttps://youtu.be/r4tOIFPwyUo");
+                message.channel.send("benefits of killing him would be: i would get pushed way less \nhttps://youtu.be/r4tOIFPwyUo");
                 break;
             
             case 5:
@@ -48,6 +47,9 @@ module.exports = {
             case 9:
                 message.channel.send('i wanna be a COWBOY BABYYY \nhttps://youtu.be/feMwFuihX2o');
                 break;
+            
+            case 10:
+                message.channel.send('hi my name is trey, i got a basketball game tomorrowwww \nhttps://youtu.be/qAj6SkMlaCQ');
 
 
         }
