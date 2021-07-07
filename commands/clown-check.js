@@ -9,9 +9,8 @@ module.exports = {
 
         if(randomNum == 0) fileEnd = '.mp4';
 
-        message.channel.send('CLOWN CHECK 🤡', { file: "./clown/clowncheck" + randomNum + fileEnd });  
+        message.channel.send('CLOWN CHECK 🤡', { file: './clown/clowncheck' + randomNum + fileEnd });
         message.react('🤡');
 
-        
     },
 };
