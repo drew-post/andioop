@@ -44,7 +44,7 @@ client.on('guildMemberAdd', member => {
 
 client.on('message', message => {
     // if message includes 'and i oop' and the author isn't the bot, write 'and i oop!'
-    if (message.content.lower.includes('and i oop') && !message.author.bot) {
+    if (message.content.toLowerCase().includes('and i oop') && !message.author.bot) {
         message.channel.send('and i oop!');
     }
 
