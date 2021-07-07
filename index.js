@@ -5,7 +5,7 @@ const fs = require('fs');
 const Discord = require('discord.js');
 
 // requires config file
- const botconfig = require('./botconfig.json');
+// const botconfig = require('./botconfig.json');
 
 // create new discord client
 const client = new Discord.Client();
@@ -71,4 +71,4 @@ client.on('message', message => {
 });
 
 // log into discord with token
-client.login(botconfig.token);
+client.login(process.env.token);
