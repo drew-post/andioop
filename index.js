@@ -33,6 +33,7 @@ client.once('ready', () => {
 // welcome message if someone joins
 client.on('guildMemberAdd', member => {
     // find welcome channel
+    // eslint-disable-next-line no-shadow
     const channel = member.guild.channels.find(channel => channel.name === 'welcome');
 
     // if there's no welcome channel
@@ -55,14 +56,14 @@ client.on('message', message => {
 
     // create a command variable by calling args.shift(), which will take the first element in array and return it while also removing it from the original array (so that you don't have the command name string inside the args array).
     const command = args.shift().toLowerCase();
-    
+
     // if the command isn't there
     if (!client.commands.has(command)) return;
 
     // if it is, try to run it and catch errors
     try {
         client.commands.get(command).execute(message, args);
-    } 
+    }
     catch (error) {
         console.error(error);
         message.reply('there was an error trying to execute that command!');
