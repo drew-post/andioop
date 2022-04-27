@@ -2,7 +2,7 @@ const fetch = require('node-fetch');
 
 module.exports = {
     name: 'catfact',
-    description: 'gives random cat',
+    description: 'gives random cat fact',
 
     async execute(message) {
         try {

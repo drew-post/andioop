@@ -1,6 +1,5 @@
 // requires node.js file system module
 const fs = require('fs');
-const fetch = require('node-fetch');
 
 // requires discord.js module
 const Discord = require('discord.js');
