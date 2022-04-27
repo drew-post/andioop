@@ -10,6 +10,8 @@ module.exports = {
         .setAuthor('drew')
         .setDescription('prefix is "*"')
         .addField('*avatar', "displays avatar \n- if no user is mentioned, the user who called the command's avatar is shown \n- if one user is mentioned, the mentioned user's avatar is shown \n- if multiple users are mentioned (up to 5),   all of their avatars are shown in reverse order from which they're mentioned")
+        .addField('*catfact', "fetches random cat fact from: https://catfact.ninja/fact")
+        .addField('*clowncheck', "we all do it")
         .addField('*time', "displays drew's local time (CST)")
         .addField('*vine', 'sends a random vine')
         .addField('*yeehaw', 'YEEHAW')

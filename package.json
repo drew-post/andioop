@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^11.5.1",
-    "eslint": "1.4.1"
+    "eslint": "1.4.1",
+    "node-fetch": "^2.6.7"
   }
 }

@@ -1,5 +1,6 @@
 // requires node.js file system module
 const fs = require('fs');
+const fetch = require('node-fetch');
 
 // requires discord.js module
 const Discord = require('discord.js');
@@ -42,7 +43,7 @@ client.on('guildMemberAdd', member => {
     channel.send(`sup, ${member}`);
 });
 
-client.on('message', message => {
+client.on('message', async (message) => {
     // if message includes 'and i oop' and the author isn't the bot, write 'and i oop!'
     if (message.content.toLowerCase().includes('and i oop') && !message.author.bot) {
         message.channel.send('and i oop!');
