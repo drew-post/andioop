@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 
 module.exports = {
-    name: 'randomjoke',
+    name: 'joke',
     description: 'gives random joke',
 
     async execute(message) {
