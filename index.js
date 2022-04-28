@@ -43,9 +43,13 @@ client.on('guildMemberAdd', member => {
 });
 
 client.on('message', async (message) => {
-    // if message includes 'and i oop' and the author isn't the bot, write 'and i oop!'
+    // if message includes a certain phrase, the bot will respond with a phrase or picture
     if (message.content.toLowerCase().includes('and i oop') && !message.author.bot) {
         message.channel.send('and i oop!');
+    } else if (message.content.toLowerCase().includes('oop') && !message.author.bot) {
+        message.channel.send('oop!');
+    } else if (message.content.toLowerCase().includes('jocke') && !message.author.bot) {
+        message.channel.send('i lub jocke :heart:\nhttps://www.youtube.com/watch?v=966I5NCjnsg');
     }
 
     // if the bot wrote the message or it doesn't start w the prefix, return

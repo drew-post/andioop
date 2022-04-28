@@ -19,9 +19,9 @@ module.exports = {
             );
             const response = await rawResponse.json();
             
-            if ((response.lyrics).length > 2000) {
+            if (response.lyrics !== undefined && (response.lyrics).length > 2000) {
                 message.channel.send("BOOO the song was too long - sorry about that")
-            } else if(response.lyrics !== undefined) {
+            } else if (response.lyrics !== undefined) {
                 message.channel.send((response.lyrics).toLowerCase()); 
             } else {
                 message.channel.send((response.error).toLowerCase());
