@@ -3,7 +3,7 @@ module.exports = {
     description: 'sends leo pic',
     execute(message) {
 
-        message.channel.send('benji 🥺', { file: "./pets/leo.jpg" });  
+        message.channel.send('leo 🥺', { file: "./pets/leo.jpg" });  
         message.react('🥺');  
     },
 };
